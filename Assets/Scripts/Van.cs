@@ -13,14 +13,14 @@ public class Van : Car
     // Update is called once per frame
     void Update()
     {
-        Move();
+        Move();//Inheritance  ABSTRACTION
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Hoot();
         }
     }
 
-    protected override void Hoot()
+    protected override void Hoot()// POLYMORPHISM
     {
         Debug.Log("Van is honking!");
     }

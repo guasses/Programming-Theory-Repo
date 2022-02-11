@@ -6,7 +6,7 @@ public abstract class Car : MonoBehaviour
 {
     public int horsepower;
     protected float m_DateOfManufacture;
-    public float DateOfManufacture
+    public float DateOfManufacture// ENCAPSULATION
     {
         get { return m_DateOfManufacture; }
         set
@@ -23,9 +23,9 @@ public abstract class Car : MonoBehaviour
     }
     protected float verticalInput;
     protected Rigidbody carRb;
-    protected abstract void Hoot();
+    protected abstract void Hoot();// POLYMORPHISM
 
-    protected virtual void Move()
+    protected virtual void Move()//Inheritance  ABSTRACTION
     {
         verticalInput = Input.GetAxis("Vertical");
         if (carRb == null)

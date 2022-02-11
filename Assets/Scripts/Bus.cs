@@ -18,7 +18,7 @@ public class Bus : Car
             Hoot();
         }
     }
-    protected override void Hoot()
+    protected override void Hoot()// POLYMORPHISM
     {
         Debug.Log("Bus is honking!");
     }
